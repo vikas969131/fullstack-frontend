@@ -8,7 +8,7 @@ const NewsletterSubscribe = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:8080/api/subscribers", { email })
+      .post("https://fullstack-backend-lw0y.onrender.com/api/subscribers", { email })
       .then(() => {
         alert("Thanks for subscribing!");
         setEmail("");

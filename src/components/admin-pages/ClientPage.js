@@ -121,7 +121,7 @@ const ClientPage = () => {
   /* ───────── Fetch helpers ───────── */
   const fetchClients = () => {
     axios
-      .get("http://localhost:8080/api/clients")
+      .get("https://fullstack-backend-lw0y.onrender.com/api/clients")
       .then((res) => setClients(res.data))
       .catch((err) => console.error("Error fetching clients:", err));
   };
@@ -134,7 +134,7 @@ const ClientPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8080/api/clients", formData)
+      .post("https://fullstack-backend-lw0y.onrender.com/api/clients", formData)
       .then(() => {
         setFormData({ name: "", description: "", designation: "", image: "" });
         fetchClients();

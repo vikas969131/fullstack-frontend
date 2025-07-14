@@ -74,7 +74,7 @@ const ContactPage = () => {
   /* ───────── Fetch once on mount ───────── */
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/contact-forms") 
+      .get("https://fullstack-backend-lw0y.onrender.com/api/contact-forms") 
       .then((res) =>{ console.log("CONTACT JSON:", res.data);  setContacts(res.data)})
       .catch((err) => console.error("Error fetching contacts:", err));
   }, []);

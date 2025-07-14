@@ -10,7 +10,7 @@ function LoginForm() {
     e.preventDefault();
 
     axios
-      .post("http://localhost:8080/api/auth/login", {
+      .post("https://fullstack-backend-lw0y.onrender.com/api/auth/login", {
         username,
         password,
       })

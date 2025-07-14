@@ -230,7 +230,7 @@ function ProjectPage() {
 
   const fetchProjects = () => {
     axios
-      .get("http://localhost:8080/api/projects")
+      .get("https://fullstack-backend-lw0y.onrender.com/api/projects")
       .then((res) => setProjects(res.data))
       .catch((err) => console.error("Error fetching projects:", err));
   };
@@ -242,7 +242,7 @@ function ProjectPage() {
   const handleDelete = (id) => {
     if (!window.confirm("Delete this project?")) return;
     axios
-      .delete(`http://localhost:8080/api/projects/${id}`)
+      .delete(`https://fullstack-backend-lw0y.onrender.com/api/projects/${id}`)
       .then(() => fetchProjects())
       .catch((err) => console.error("Delete error:", err));
   };
@@ -258,7 +258,7 @@ function ProjectPage() {
 
   const saveEdit = (id) => {
     axios
-      .put(`http://localhost:8080/api/projects/${id}`, editData)
+      .put(`https://fullstack-backend-lw0y.onrender.com/api/projects/${id}`, editData)
       .then(() => {
         setEditingId(null);
         fetchProjects();
@@ -269,7 +269,7 @@ function ProjectPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8080/api/projects", formData)
+      .post("https://fullstack-backend-lw0y.onrender.com/api/projects", formData)
       .then(() => {
         setFormData({ name: "", description: "", image: "" });
         fetchProjects();

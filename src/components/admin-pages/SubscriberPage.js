@@ -55,7 +55,7 @@ const SubscriberPage = () => {
   /* ───────── Fetch once on mount ───────── */
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/subscribers")
+      .get("https://fullstack-backend-lw0y.onrender.com/api/subscribers")
       .then((res) => setSubscribers(res.data))
       .catch((err) => console.error("Error fetching subscribers:", err));
   }, []);

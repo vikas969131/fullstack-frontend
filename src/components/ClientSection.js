@@ -6,7 +6,7 @@ const ClientSection = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/clients")
+      .get("https://fullstack-backend-lw0y.onrender.com/api/clients")
       .then((res) => setClients(res.data))
       .catch((err) => console.error("Client fetch error:", err));
   }, []);

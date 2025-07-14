@@ -3,7 +3,7 @@ import axios from "axios";
 
 /* 1️⃣  Create ONE Axios instance for the whole app */
 const api = axios.create({
-  baseURL: "http://localhost:8080", // your Spring Boot server
+  baseURL: "https://fullstack-backend-lw0y.onrender.com", // your Spring Boot server
 });
 
 /* 2️⃣  Interceptor: runs before EVERY request */

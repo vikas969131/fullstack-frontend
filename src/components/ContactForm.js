@@ -150,7 +150,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:8080/api/contact-forms", form)
+      .post("https://fullstack-backend-lw0y.onrender.com/api/contact-forms", form)
       .then(() => {
         alert("Submitted!");
         setForm({
