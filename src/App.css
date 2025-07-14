@@ -1,0 +1,164 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.App {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ddd;
+}
+
+h1, h2 {
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+hr {
+  margin: 3rem 0;
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+}
+
+/* Projects */
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  width: 300px;
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.project-card h3 {
+  margin-top: 0.5rem;
+}
+
+/* Clients */
+.client-card {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  width: 150px;
+  background-color: #fafafa;
+}
+
+.client-card img {
+  width: 100px;
+  margin-bottom: 0.5rem;
+}
+
+/* Forms */
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #1976d2;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0d47a1;
+}
+
+form p {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%;
+  }
+}
+
+
+.client-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .client-card {
+    width: 100%;
+  }
+}
+body {
+  background-color: #f0f4f8; /* Light blue/gray */
+  color: #222;
+}
+
+.App {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.08);
+}
+
+h1, h2 {
+  color: #0d47a1; /* Dark blue */
+}
+
+/* Buttons */
+form button {
+  background-color: #0d47a1;
+}
+
+form button:hover {
+  background-color: #1976d2;
+}
+
+/* Status messages */
+form p {
+  color: #0d47a1;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+button {
+  background: #0d47a1;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  margin: 0 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover { background: #1976d2; }
