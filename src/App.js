@@ -1,22 +1,23 @@
 import React from "react";
-import ProjectList from "./components/ProjectList";
-import Footer from "./components/Footer";
-import ClientList from "./components/ClientList";
 import HeroSection from "./components/HeroSection";
-import ContactForm from "./components/ContactForm"; 
-// import SubscribeForm from "./components/SubscribeForm"; // 
+import ProjectList from "./components/ProjectList";
+import ClientList from "./components/ClientList";
+import ContactForm from "./components/ContactForm";  
 import LoginForm from "./components/LoginForm"; 
 import AdminDashboard from "./components/AdminDashboard";
 import NewsletterSubscribe from "./components/NewsletterSubscribe"; 
-import ClientSection from "./components/ClientSection";   
+import ClientSection from "./components/ClientSection";  
+import Footer from "./components/Footer"; 
 
 
 
 
 function App() {
   return (
-    <div style={{ padding: "2rem" }}>
-       <div className="bg-white min-h-screen flex flex-col"></div>
+    // <div style={{ padding: "2rem" }}>
+    //    <div className="bg-white min-h-screen flex flex-col"></div>
+
+    <>
       <h1>Flipr Landing Page</h1>
       <HeroSection />
       <ProjectList />
@@ -25,7 +26,6 @@ function App() {
       <hr />
       <ContactForm />
       <hr />
-      {/* <SubscribeForm /> */}
       <hr />
       <LoginForm />
        <hr />
@@ -33,7 +33,7 @@ function App() {
       <ClientSection />
       <NewsletterSubscribe />
        <Footer />  
-    </div>
+    </>
   );
 }
 
